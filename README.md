@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Multi-Step Form with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and customizable multi-step form with validation using React. This form guides users through multiple steps, each with its own set of form fields and validation logic.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Number of Steps:** The form has three steps, each with relevant form fields.
+- **Form Fields:** Fields include personal information, address information, and account setup details.
+- **Validation Logic:** Client-side validation for required fields, email formats, date formats, and more.
+- **Navigation:** Users can navigate between steps, go back to the previous step, and submit the form.
 
-### `npm start`
+## Form Fields
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Step 1: Personal Information
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Full Name (text input)
+- Email Address (email input)
+- Date of Birth (date input)
 
-### `npm test`
+### Step 2: Address Information
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Street Address (text input)
+- City (text input)
+- State (dropdown/select input)
+- Zip Code (numeric input)
 
-### `npm run build`
+### Step 3: Account Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Username (text input)
+- Password (password input)
+- Confirm Password (password input)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Validation Logic
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Full Name:** Required, minimum length 3 characters.
+2. **Email Address:** Required, must be a valid email format.
+3. **Date of Birth:** Required, must be a valid date.
+4. **Street Address:** Required, minimum length 5 characters.
+5. **City:** Required, minimum length 3 characters.
+6. **State:** Required (selected from the dropdown).
+7. **Zip Code:** Required, must be a valid numeric format.
+8. **Username:** Required, minimum length 3 characters.
+9. **Password:** Required, minimum length 6 characters.
+10. **Confirm Password:** Required, must match the password field.
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone this repository: `git clone <repository-url>`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Customization
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Add your own form validation logic or modify existing rules.
+- Style the form components and pages according to your design preferences.
+- Extend the form with additional steps or fields as needed.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies Used
 
-## Learn More
+- React
+- React Router (for navigation)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to contribute to this project by opening issues or submitting pull requests. All contributions are welcome!
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Kaushik Moralwar
